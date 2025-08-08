@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Book Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-nav">
+    <span id="welcome"></span>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <header>
+    <h1>📚 Online Book Store</h1>
+  </header>
+
+  <main>
+    <div class="filters">
+      <button onclick="filterBooks('all')">All</button>
+      <button onclick="filterBooks('Fiction')">Fiction</button>
+      <button onclick="filterBooks('Non-Fiction')">Non-Fiction</button>
+    </div>
+
+    <section class="book-list" id="book-list"></section>
+
+    <aside class="cart">
+      <h2>🛒 Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: ₹<span id="total">0</span></p>
+      <button onclick="simulatePayment()">Proceed to Pay</button>
+    </aside>
+  </main>
+
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

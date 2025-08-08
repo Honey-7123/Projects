@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.filters {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filters button {
+  padding: 8px 15px;
+  margin: 0 5px;
+  border: none;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #2980b9;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 70%;
+}
+
+.book {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 5px gray;
+  text-align: center;
+}
+
+.book img {
+  max-width: 100px;
+  height: auto;
+}
+
+.cart {
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 0 5px gray;
+  max-width: 25%;
+  margin: 20px;
+  height: fit-content;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.auth-container {
+  max-width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px gray;
+}
+
+.auth-container h2 {
+  text-align: center;
+}
+
+.auth-container form input,
+.auth-container form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.top-nav {
+  background: #3498db;
+  color: white;
+  padding: 10px;
+  text-align: right;
+}
